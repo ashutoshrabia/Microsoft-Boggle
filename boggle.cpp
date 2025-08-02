@@ -21,11 +21,11 @@ class Boggle {
         set<string>solutions;
         Boggle(int n,int m) {
             this->row=n;
-            this->col=n;
+            this->col=m;
             this->mat.resize(n);
             this->visited=vector<vector<bool>>(n,vector<bool>(m));
             cout<<"Enter board values of "<<n<<" by "<<m<<endl;
-            vector<string>a{"hello","onder","telad","hoatr"};
+
             for(int i=0;i<n;i++)
                 cin>>this->mat[i];
         }
